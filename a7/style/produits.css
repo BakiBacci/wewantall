@@ -1,0 +1,162 @@
+header{
+    border-bottom: 2px var(--jaune) solid;
+    color: black;
+    position: static;
+    height: 15vh;
+    width: 100%;
+    text-align: start;
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    gap: 5px;
+    /*justify-content: space-around;*/  
+      
+}
+main{
+    flex-direction: column;
+    min-height: 50vh;
+    z-index: 2;
+    justify-content: center;
+    
+    
+
+}
+
+article{
+    border:  1px solid violet;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 50px;
+    margin: 15px;
+}
+
+figure{
+    width: 420px;
+   max-height: 30vh;
+    margin: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+figure>img{
+    object-fit: fill;
+    display: block;
+    max-width:100% ;
+    max-height: 100%;
+    
+}
+
+
+figcaption{
+    
+    width: 100%;
+    font-family: inter;
+    padding: 10px;
+   font-size: 20px;
+    text-align: start;
+    height:80px ;
+    padding: 5px;
+}
+
+figcaption>a{
+    display: none;
+}
+
+figure:hover{
+    background-color: black;
+    color: white;
+    font-family: inter;
+    font-size: 100;
+    transition: ease-in-out 300ms;
+    padding: 5px;
+    height: 30vh;
+
+}
+
+
+
+
+figure:hover>figcaption{
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    
+
+}
+
+figure:hover>figcaption>a{
+    display: contents;
+    color: var(--rouge);
+    background-color: var(--gris);
+    
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+#logo{
+    text-align: start;
+    color: black;
+}
+.links{
+   
+    display: flex;
+    gap: 10px;
+    font-size: 23px;
+    font-family: Inter;
+    color: black;
+    font-weight: 400;
+    
+}
+h1{
+    font-size: 30px;
+    font-family: Inter;
+    color: black;
+    font-weight: 400;
+    margin: 20px;
+}
+
+
+a{
+    color: black;
+}
+#adBar{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    height: 45px;
+    padding: 10px;
+}
+
+#adBar>p{
+    color: white;
+    font-family: inter;
+    padding: 5px;
+    
+}
+#adBar>img{
+    
+    width: 100%;
+    
+}
+
+
+
+
+
+footer{
+    position: static;
+    min-height: 15vh;
+    width: 100%;
+  
+    
+
+}

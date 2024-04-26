@@ -1,0 +1,145 @@
+
+main {
+  padding-top: 100px;
+  background-color: var(--gris);
+  min-height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+header{
+    border-bottom: solid var(--violetclr) 2px;
+    text-align: center;
+}
+
+#logo {
+  color: var(--violetclr);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  min-height: 250px;
+}
+
+fieldset {
+  border: solid;
+  border-radius: 7px;
+
+  color: var(--rouge);
+}
+
+legend {
+  font-family: Bebas Neue;
+  font-size: 32px;
+  color: var(--grisfoncé);
+}
+:placeholder-shown {
+  color: black;
+  font-family: Inconsolata;
+  font-weight: 600;
+}
+
+label {
+  font-family: Inter;
+}
+
+input {
+  padding-inline-start: 4px;
+  padding-block: 5px;
+  margin: 3px;
+  border: transparent;
+  border-radius: 1px;
+}
+
+#inscription {
+  min-height: 30vh;
+  padding: 30px;
+}
+
+#connexion {
+  padding: 30px;
+  width: 10%;
+  height: 23vh;
+}
+
+
+.button {
+  border: transparent;
+
+  border-radius: 10px;
+  padding-inline: 10px;
+  margin-top: 5px;
+}
+.button:hover {
+  background-color: var(--rouge);
+  transition: ease-in-out 100ms;
+}
+
+/*footer{
+    min-height: 15vh;
+    max-height: 20vh;
+    padding: 2px;
+}
+footer>a{
+ position: relative;
+ top: 50px;
+ 
+}
+*/
+/*footer {
+    min-height: 15vh;
+    max-height: 20vh;
+    padding: 20px;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    font-size: larger; 
+    font-family: Bebas Neue;
+    color: var(--gris);
+    text-align: center;
+    background-color: var(--marron);
+  }*/
+
+footer a {
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Center vertically */
+  max-width: 100%; /* Prevent images from overflowing */
+  height: auto; /* Maintain aspect ratio */
+  text-decoration: none;
+  color: var(--gris);
+}
+
+hr {
+
+  height: 250px;
+}
+@media screen and (max-width: 1600px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    height: 1300px;
+  }
+  hr {
+    display: none;
+  }
+
+  #inscription {
+    max-height: 60vh;
+  }
+  #connexion {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  #inscription {
+    max-height: 60vh;
+  }
+}
