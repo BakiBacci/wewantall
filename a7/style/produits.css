@@ -160,3 +160,18 @@ footer{
     
 
 }
+
+@media screen and (max-width: 1200px){
+    main{
+        overflow: scroll;
+        height: 1150px;
+
+    }
+    #adBar{
+        display: contents;
+    }
+
+    h1{
+        display: contents;
+    }
+}
