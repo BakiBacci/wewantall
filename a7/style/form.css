@@ -107,11 +107,11 @@ footer>a{
   }*/
 
 footer a {
-  display: flex; /* Enable flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: flex-start; /* Center vertically */
-  max-width: 100%; /* Prevent images from overflowing */
-  height: auto; /* Maintain aspect ratio */
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  max-width: 100%; 
+  height: auto; 
   text-decoration: none;
   color: var(--gris);
 }
